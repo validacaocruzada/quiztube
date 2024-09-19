@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizetube Landing Page</title>
+    <style>
+        :root {
+            --klein-blue: #002FA7;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .plugin {
+            text-decoration: line-through;
+        }
+        .instructions {
+            margin: 20px 0;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .product-hunt {
+            margin-top: 40px;
+        }
+        .footer {
+            margin-top: 20px;
+            border-top: 1px solid black;
+            padding-top: 10px;
+        }
+        .email-form {
+            margin: 10px 0; /* Reduced top margin */
+            display: flex;
+            align-items: center;
+            max-width: 50%; /* Make the form half its size */
+        }
+        .email-form input[type="email"] {
+            flex-grow: 1;
+            padding: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        .email-form button {
+            padding: 10px 20px;
+            background-color: var(--klein-blue);
+            color: white;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .install-button {
+            margin: 20px 0;
+            position: relative;
+            display: inline-block;
+        }
+        .install-button img {
+            max-width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+        .coming-soon-badge {
+            background-color: var(--klein-blue);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .coming-soon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        /* Update other button and accent colors */
+        .product-hunt img {
+            filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(190deg) saturate(900%);
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>Quiztube by xval.ai</h1>
+            <span class="coming-soon-badge">Coming soon</span>
+        </div>
+        
+        <p><strong>Automatic quizzes from YouTube learning videos.</strong><br>Generate quizzes from your YouTube piano lessons, DIY tutorials, and more.</p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VPJYBnmxNMI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div class="install-button">
+            <img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png" alt="Available in the Chrome Web Store" width="248" height="75">
+        </div>
+
+        <div class="email-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Notify me</button>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Quiztube by xval.ai</p>
+        </div>
+    </div>
+
+</body>
+</html>
